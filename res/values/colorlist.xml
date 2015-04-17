@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md__transparent">#00000000</color>
+
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="blue">#5CC3E9</color>
+    <color name="titleBar">#E64239</color>
+    <color name="titleBar_pressed">#c42017</color>
+    <color name="tabweiget_pressed">#71464D</color>
+	<color name="tabweiget_default">#484848</color>
+	<color name="gray">#7F7F7F</color>
+     <color name="white">#ffffff</color>
+     <color name="pink">#FF0066</color>
+     <color name="red">#FF0033</color>
+     <color name="green">#00FF00</color>
+     <color name="bg_white">#FFFFFF</color>
+     <color name="goodPink">#F784A5</color>
+     <color name="transparent">#00000000</color>
+     <color name="keyword">#ee1617</color>
+    
+     <color name="listview_item1">#C8DEC9</color>
+     <color name="listview_item2">#92BBAD</color>
+     <color name="listview_item3">#99FFFFFF</color>
+     
+     <color name="listview_title">#F6EBE9</color>
+     <color name="listview_textcolor">#6a71e5</color>
+	<!-- <color name="defalt_volume">#DCDCDC</color>
+	<color name="pressed_volume">#AAAAAA</color>   -->
+	
+	 <color name="button_login_default">#49BDCC</color>
+	 <color name="button_login_pressed">#279baa</color>
+	
+	
+	<!-- SelectVolume页面颜色 -->
+	<color name="defalt_volume">#ECBBB7</color>
+	<color name="pressed_volume">#F1D8B5</color>
+	<color name="select_volume_bg">#FEFFEF</color>
+	<color name="select_volume_LinnerLayout">#FFFFFF</color>
+	<color name="select_volume_tv_bg">#E64239</color>
+	<color name="select_volume_tv_color">#8A7065</color>
+	<color name="select_volume_gv_tv_color">#8A7065</color>
+	<color name="select_volume_tab__font">#FFFFFF</color>
+	
+	<!--seekbar颜色  -->
+	<color name="before_background">#000000</color>
+	<color name="behind_background">#FFFFFF</color>
+	
+	<color name="back_default">#2B2B2B</color>
+	<color name="back_pressed">#FF0000</color>
+	
+	
+	<color name="item_default">#2B2B2B</color>
+	<color name="item_pressed">#000000</color>
+	
+	<!-- <color name="pic1">#F7F7DD</color> -->
+	
+	<color name="highlight">#F7941D</color>  <!--  黄-->
+	<color name="highlight1">#0B76A2</color> <!--  蓝-->
+	<color name="highlight2">#FF5534</color> <!--  绿-->
+	<color name="highlight3">#6A71E5</color> <!--  橙--> 
+	<color name="highlight4">#06AA85</color> <!--  紫-->  
+	<color name="highlight5">#FF5067</color> <!--  红-->
+	<color name="pic1">#F9F4E7</color>
+	<color name="pic2">#D6B5BC</color>
+	<color name="pic3">#F0D6BD</color>
+	<color name="pic4">#BDDDC5</color>
+	<color name="pic5">#BCDEDF</color>
+	<color name="pic6">#FAF9DE</color>
+	<color name="pic7">#FFF2E2</color>
+	<color name="pic8">#FDE6E0</color>
+	<color name="pic9">#E3EDCD</color>
+	<color name="pic10">#DCE2F1</color>
+	<color name="pic11">#E9EBFE</color>
+	<color name="pic12">#EAEAEF</color>
+	
+	<color name="titlefont">#795548</color>
+	
+	<color name="churchinfo_item_pressed">#CCCCCC</color>
+	<color name="churchinfo_item_default">#FFFFFF</color>
+	
+	
+	<color name="hinttextcolor">#B5B4B4</color>
+	<color name="main">#71464D</color>
+	<color name="titlebar_read">#F7F7F7</color>
+	<color name="titlebar_read_pressed">#D5D5D5</color>
+	
+	<color name="spinners_bg">#303030</color>
+		<color name="PressedColor">#EEEEEE</color>
+</resources>

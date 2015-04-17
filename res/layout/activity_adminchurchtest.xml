@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/titlebar" 
+        layout="@layout/title_bar_adminchurchtest" />
+	
+    <ListView
+        android:layout_below="@id/titlebar"
+        android:id="@+id/members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" />
+    
+    <TextView 
+        android:id="@+id/notest_tv"
+        android:visibility="invisible"
+        android:layout_below="@id/titlebar"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="还没有任何成员提交考核"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

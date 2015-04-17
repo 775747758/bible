@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_option" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="背诵经文背景选择"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_layout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_option_top"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/gallery"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="bg_gallery"
+                    android:paddingLeft="10dp"
+                    android:text="从相册中选择"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_option_bottom"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/camera"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="bg_camera"
+                    android:paddingLeft="10dp"
+                    android:text="拍一张"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="背诵经文颜色设置"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_layout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_option_top"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/color1"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="segment_color"
+                    android:paddingLeft="10dp"
+                    android:text="经节颜色"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/color2"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="content_color"
+                    android:paddingLeft="10dp"
+                    android:text="经文颜色"
+                    android:textColor="#ffffff" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1.0dip"
+                    android:background="@drawable/white_dedide" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/color3"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="segment_color_today"
+                    android:paddingLeft="10dp"
+                    android:text="今日经节颜色"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_option_medium"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/color4"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="content_color_today"
+                    android:paddingLeft="10dp"
+                    android:text="今日经文颜色"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/segment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="【徒2:44】" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="信的人都在一处，凡物公用；" />
+
+                <TextView
+                    android:id="@+id/segment_today"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="【徒6:4】" />
+
+                <TextView
+                    android:id="@+id/content_taday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="但我们要专心以祈祷传道为事。” " />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:text="其它"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_layout"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/shortcut"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:onClick="addshortcut"
+                    android:paddingLeft="10dp"
+                    android:text="添加快捷方式到桌面"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

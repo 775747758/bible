@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_selectvolume1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+    android:layout_height="50dp"
+        >
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" 
+            android:layout_width="0dp"
+    		android:layout_height="50dp"
+            >
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#8A7065"
+            android:id="@+id/oldbible_tv"
+            android:clickable="true"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical" 
+            android:gravity="center"
+            android:text="旧约"
+            android:layout_width="fill_parent"
+    		android:layout_height="47dp"
+            />
+        <View
+            android:visibility="visible"
+             android:id="@+id/oldbible_v" 
+            android:background="@color/titleBar"
+            android:layout_width="fill_parent"
+    		android:layout_height="3dp"
+            />
+        </LinearLayout>
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" 
+            android:layout_width="0dp"
+    		android:layout_height="50dp"
+            >
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#8A7065"
+             android:id="@+id/newbible_tv"
+            android:clickable="true"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical" 
+            android:gravity="center"
+            android:text="新约"
+            android:layout_width="fill_parent"
+    		android:layout_height="47dp"
+            />
+        <View 
+            android:visibility="invisible"
+             android:id="@+id/newbible_v"
+            android:background="@color/titleBar"
+            android:layout_width="fill_parent"
+    		android:layout_height="3dp"
+            />
+        </LinearLayout>
+        <LinearLayout 
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" 
+            android:layout_width="0dp"
+    		android:layout_height="50dp"
+            >
+        <TextView
+            android:textSize="16dp"
+            android:textColor="#8A7065"
+             android:id="@+id/chapter_tv"
+            android:clickable="true"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical" 
+            android:gravity="center"
+            android:text="章选"
+            android:layout_width="fill_parent"
+    		android:layout_height="47dp"
+            />
+        <View 
+            android:visibility="invisible"
+             android:id="@+id/chapter_v"
+            android:background="@color/titleBar"
+            android:layout_width="fill_parent"
+    		android:layout_height="3dp"
+            />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+   <View 
+            android:background="@color/titleBar"
+            android:layout_width="fill_parent"
+    		android:layout_height="1dp"
+            /> 
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="1"
+        android:id="@+id/select_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center" >
+    </android.support.v4.view.ViewPager>
+    
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+    android:layout_height="45dp"
+        >
+       
+        <TextView
+            android:textColor="@color/titleBar"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:id="@+id/tradition_tv"
+            android:clickable="true"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical" 
+            android:gravity="center"
+            android:text="传统顺序"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+            />
+        
+        <TextView
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textColor="#8A7065"
+             android:id="@+id/letter_tv"
+            android:clickable="true"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical" 
+            android:gravity="center"
+            android:text="字母顺序"
+            android:layout_width="0dp"
+    		android:layout_height="match_parent"
+            />
+        
+       
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:showAsAction="withText"
+         android:icon="@drawable/delete_menu"
+        android:id="@+id/all"
+        android:title="全部"/>
+    
+    <item
+        android:showAsAction="withText"
+         android:icon="@drawable/delete_menu"
+        android:id="@+id/church"
+        android:title="我的教会"/>
+</menu>

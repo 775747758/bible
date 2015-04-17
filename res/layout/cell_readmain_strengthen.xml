@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_ReciteMain" >
+    
+   
+     <com.orange.view.ElasticListView
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:cacheColorHint="#00000000"  
+        android:id="@+id/strengthen"
+		android:background="#00000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+     
+     <TextView 
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+        android:id="@+id/nostrengthen_tv"
+        android:visibility="invisible"
+        android:layout_below="@id/titlebar"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="  您还没有添加任何经文到强化栏目，当您在背诵圣经的时候，如果有些经文很难背诵，或者很长时间没有记住，您可以在“全部”栏目长按经文，选择强化添加到强化栏目，如果您想具体了解本模块的功能，可以点击右上角的信息按钮查看！"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</RelativeLayout>

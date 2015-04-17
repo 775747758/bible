@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+
+
+        <com.orange.view.CircleImageView
+            android:id="@+id/portrait"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher" />
+        
+        <TextView 
+            android:textSize="18dp"
+            android:textColor="#3D4550"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/name_tv"
+            android:gravity="center_vertical"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            >
+            <TextView
+            android:textColor="#4D4770" 
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/grade_tv"
+            android:gravity="center_vertical|right"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+            
+            <TextView 
+            android:textSize="18dp"
+            android:textColor="#3D4550"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rank_tv"
+            android:gravity="center_vertical|right"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            />
+            
+        </LinearLayout>
+        
+        <!-- 隐藏的tv，为了取得username -->
+         <TextView 
+            android:layout_marginLeft="10dp"
+            android:id="@+id/username"
+            android:gravity="center_vertical"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            />
+    
+</LinearLayout>

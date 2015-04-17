@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_church" />
+
+    <RelativeLayout
+        android:id="@+id/person_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/church_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <com.orange.view.CircleImageView
+                android:id="@+id/church_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/churchName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EBEBEB"
+        android:orientation="horizontal" >
+        <TextView
+            android:onClick="churchMember"
+            android:clickable="true"
+            android:background="#14AC97"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:text="教会成员"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            />
+        
+        <TextView
+            android:onClick="churchInfo"
+            android:clickable="true"
+            android:background="#67B3D3"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:text="教会资料"
+            android:layout_weight="1" 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EBEBEB"
+        android:orientation="horizontal" >
+        <TextView
+            android:clickable="true"
+            android:onClick="ChurchNotice"
+            android:background="#E375A6"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:text="教会通知"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            />
+        <TextView
+            android:clickable="true"
+            android:onClick="PublishChurchNotice"
+            android:background="#8BC763"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:text="发布通知"
+            android:layout_weight="1" 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            />
+    </LinearLayout>
+      <LinearLayout
+          
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EBEBEB"
+        android:orientation="horizontal" >
+        
+        <TextView  
+             android:clickable="true"
+            android:onClick="ChurchTest"
+            android:background="#876BB5"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:text="考核事项"
+            android:layout_weight="1" 
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</LinearLayout>

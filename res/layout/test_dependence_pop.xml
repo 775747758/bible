@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/pop_rounded_layout"
+    android:layout_width="30dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <TextView
+	    android:clickable="true"
+	    android:background="@drawable/pop_left_textview"
+	    android:textColor="#000000"
+	    android:textSize="20dp"
+	    android:gravity="center"
+	    android:text="重新测试"  
+	    android:layout_height="fill_parent"
+    	android:layout_weight="1"
+        android:id="@+id/again"
+        android:layout_width="0dp"/>
+	<TextView
+	     android:clickable="true"
+	    android:background="@drawable/pop_right_textview"
+	    android:textColor="#000000"
+	    android:textSize="20dp"
+	    android:gravity="center"
+	    android:text="继续测试" 
+	    android:layout_height="fill_parent"
+    	android:layout_weight="1"
+        android:id="@+id/continues"
+        android:layout_width="0dp"/>
+    
+</LinearLayout>

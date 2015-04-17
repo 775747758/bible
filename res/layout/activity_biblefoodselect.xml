@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_biblefoodselect" />
+
+    <com.orange.view.ElasticScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:onClick="food2"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="荒漠甘泉"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food1"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="竭诚为主"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food4"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="生命隽语"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food5"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="每日天粮"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food6"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="旷野的筵席"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food7"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="活水"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food8"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="每日经历神"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food9"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="清晨甘露"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+
+            <TextView
+                android:onClick="food10"
+                 android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_biblefoodselect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="静夜亮光 "
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="#C5C5C5" />
+        </LinearLayout>
+    </com.orange.view.ElasticScrollView>
+
+</LinearLayout>

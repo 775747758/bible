@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.acts"
+    android:versionCode="5"
+    android:versionName="4.2" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    
+   
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.baidu.frontia.FrontiaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.example.acts.Activity_Splash"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.acts.ShortCutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.acts.Activity_ViewPagers"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.acts.Activity_Mem"
+            android:label="@string/Activity1"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.acts.Activity_Alter"
+            android:label="@string/Activity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.orange.read.Activity_SelectVolume"
+            android:label="@string/SelectVolumeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.orange.about.Activity_AboutApp"
+            android:label="AboutApp"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.acts.Activity_Option"
+            android:label="OptionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.acts.Activity_BackgroundSelect"
+            android:label="BackgroundSelectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.acts.ColorPickerDialog"
+            android:label="ColorPickerDialog"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.orange.about.Activity_AppFunction"
+            android:label="AppFunctionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.orange.test.Activity_BibleTestMain"
+            android:label="BibleTestMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.orange.test.Activity_BibleTest_dependence"
+            android:label="BibleTest_dependence"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.orange.test.Activity_BibleTest_End"
+            android:label="BibleTest_End"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.orange.map.Activity_Map"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="MapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.orange.login.Activity_Register"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.orange.login.Activity_Login"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor" >
+        </activity>
+        
+         <activity
+            android:name="com.orange.read.Activity_SelectVolume_Sec"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Activity_SelectVolume_Sec"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor" >
+        </activity>
+        
+        <activity
+            android:name="com.orange.read.Activity_ReadBible"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Activity_ReadBible"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor" >
+        </activity>
+        
+        <activity
+            android:name="com.orange.about.Activity_Talk"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Activity_Talk"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensor" >
+        </activity>
+        
+         <activity
+            android:name=".MainActivity"
+            android:label="MainActivity" >
+        </activity>
+        
+        <activity
+            android:name=".Church_Activity"
+            android:label="Church_Activity" >
+        </activity>
+        <activity
+            android:name=".Main_Activity"
+            android:label="Main_Activity" >
+        </activity>
+        <activity
+            android:name=".Personal_Activity"
+            android:label="Personal_Activity" >
+        </activity>
+        <activity
+            android:name="com.orange.read.ActivityReadMain"
+            android:label="ActivityReadMain" >
+        </activity>
+        
+        
+        
+        
+        
+
+        <service
+            android:name="com.orange.service.TimeListenerService"
+            android:enabled="true"
+            android:label="TimeListenerService"
+            android:process="system" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.orange.service.Service" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.orange.service.TimeListenerService2"
+            android:enabled="true"
+            android:label="TimeListenerService2"
+            android:process="system" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.orange.service.Service2" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!--
+             <receiver
+            android:name="com.orange.receiver.DateReceiver">
+            <intent-filter android:priority="1000">
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED"> 
+                </action>
+            </intent-filter>
+        </receiver>
+        -->
+
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <action android:name="com.baidu.android.pushservice.action.frontia.user" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+
+        <receiver android:name="com.baidu.frontia.module.deeplink.db.DLDataPushReceiver" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.SDK_MESSAGE" />
+                <action android:name="com.baidu.android.pushservice.action.sdk.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="T8CTxEkOmK4DYOjGR6TMenwx" >
+        </meta-data>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

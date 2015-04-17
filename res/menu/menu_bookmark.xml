@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:showAsAction="ifRoom|withText"
+        android:id="@+id/read"
+         android:icon="@drawable/delete_menu"
+         android:visible="true"
+        android:title="读经书签"/>
+    
+     <item
+        android:showAsAction="ifRoom|withText"
+        android:id="@+id/think"
+        android:title="灵修书签"/>
+     
+      <item
+        android:showAsAction="ifRoom|withText"
+        android:id="@+id/query"
+        android:title="查经书签"/>
+      
+      <item
+        android:showAsAction="withText"
+        android:id="@+id/add"
+        android:title="新建书签"/>
+    
+    
+     
+     
+</menu>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_selectvolume" />
+
+    <FrameLayout
+        android:id="@+id/fl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:background="#000000"
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10px"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bbffffff"
+            android:gravity="center"
+            android:textSize="40px" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <GridView
+            android:id="@+id/gv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <GridView
+            android:id="@+id/gv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <GridView
+            android:id="@+id/gv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <GridView
+            android:id="@+id/gv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <GridView
+            android:id="@+id/gv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <GridView
+            android:id="@+id/gv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="0dp" >
+
+        <GridView
+            android:id="@+id/gv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="6dp"
+            android:numColumns="3"
+            android:orientation="vertical"
+            android:verticalSpacing="6dp" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_gravity="bottom"
+            android:background="#bb000000"
+            android:gravity="center"
+            android:textSize="40px" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip"
+    android:background="#E64239"
+    android:gravity="center_vertical" >
+ <TextView
+        android:onClick="back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:id="@+id/title_bar_menu_btn"
+        android:layout_width="70dp"
+        android:layout_height="45.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3.0dip" />
+
+
+    <TextView
+        android:id="@+id/title_bar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="75.0dip"
+        android:paddingRight="75.0dip"
+        android:singleLine="true"
+        android:text="圣经流利说"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+    
+    <TextView
+        android:layout_alignParentRight="true"
+        android:onClick="test"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:layout_width="70dp"
+        android:layout_height="45.0dip"
+        android:layout_centerVertical="true" />
+  <!--  <LinearLayout 
+       
+       android:layout_alignParentBottom="true"
+        android:background="#FFF"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+       ></LinearLayout>
+
+     <ImageView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/titlebar_shawdow" /> -->
+
+</RelativeLayout>

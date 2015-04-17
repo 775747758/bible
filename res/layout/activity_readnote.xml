@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_readnote" />
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/search_readnote" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:layout_marginLeft="10dp"
+            android:textColorHint="@color/hinttextcolor"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C5C5C5" />
+
+    <com.orange.view.ElasticListView
+        android:layout_weight="1"
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0dp"
+        android:divider="@color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </com.orange.view.ElasticListView>
+    <RelativeLayout
+        android:onClick="delete"
+     	android:visibility="gone"
+        android:clickable="true" 
+        android:id="@+id/delete_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+         android:background="@drawable/selector_biblefoodselect"
+        >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_marginLeft="20dp" 
+            android:src="@drawable/delete_readnote"
+            android:layout_gravity="center_vertical"
+            android:layout_width="30dp"
+        android:layout_height="30dp"
+            />
+        
+        <TextView 
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="#7A7A7A"
+            android:text="删除"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            />
+        
+    </LinearLayout>
+    
+    <View 
+	    android:layout_alignParentTop="true"
+	    android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#C6C6C6"
+	    />
+</RelativeLayout>
+</LinearLayout>

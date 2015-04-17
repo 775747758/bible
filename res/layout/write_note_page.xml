@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe1d7" >
+<RelativeLayout 
+    android:id="@+id/topt"
+    android:layout_width="fill_parent"
+    android:layout_height="20dp"
+    android:background="#4a95ce">
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/topbart"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_below="@id/topt"
+    android:background="#4a95ce"
+    >
+ <Button 
+     android:layout_width="30dp"
+     android:layout_height="30dp"
+     android:id="@+id/re"
+     android:layout_marginTop="15dp"
+     android:onClick="onBackNote"
+     android:background="@drawable/wujie_re"/>
+ <TextView 
+     android:id="@+id/date"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="20sp"
+     android:text="10/11"
+     android:textColor="#ffffff"
+     android:layout_marginTop="8dp"
+     android:layout_toRightOf="@id/re"
+     android:layout_marginLeft="5dp"
+     
+     />
+  <TextView 
+     android:id="@+id/time"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="15sp"
+     android:text="星期六  17:39"
+     android:textColor="#ffffff"
+     android:layout_below="@id/date"
+     android:layout_toRightOf="@id/re"
+     android:layout_marginLeft="5dp"
+     android:layout_marginTop="2dp"
+     />
+  <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/note_class"
+     android:layout_centerVertical="true"
+     android:text="主日笔记"
+     android:textSize="25sp"
+     android:textColor="#ffffff"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="15dp"/>
+</RelativeLayout>
+   <EditText 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/title"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_below="@id/topbart"
+       android:layout_marginTop="15dp"
+       android:background="#ebe1d7"
+       android:hint="请输入标题"
+       android:textSize="20sp"
+       android:textColor="#4a95ce"
+       android:gravity="center"
+    />
+   <View 
+       android:layout_height="1dp"
+       android:layout_width="fill_parent"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:background="#4a95ce"
+       android:layout_below="@id/title"
+       android:layout_marginTop="8dp"/>
+   
+<RelativeLayout 
+    android:id="@+id/bottom_area"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:background="#fae1d7"
+    >
+  <View 
+       android:id="@+id/line"
+       android:layout_height="1dp"
+       android:layout_width="fill_parent"
+       android:background="#11000000"
+       
+       />
+    <GridView 
+     android:id="@+id/smart_bar"
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:numColumns="5"
+     android:columnWidth="30dp"
+     android:background="#fae1d7"
+     android:stretchMode="columnWidth" 
+     android:gravity="center"
+     android:paddingTop="0dp" 
+     android:paddingBottom="0dp"
+     android:listSelector="@null"
+     android:layout_centerVertical="true"
+     
+     />
+    
+</RelativeLayout>
+ 
+
+ 
+   <com.wujie.example.note.MyEditText 
+       android:id="@+id/content"
+       android:gravity="top"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@id/title"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+       android:paddingTop="15dp"
+       android:background="#ebe1d7"
+       android:lineSpacingExtra="5dp"
+       android:textColor="#78000000"
+       android:layout_above="@id/bottom_area"/>
+    <ListView
+      android:id="@+id/tool_list"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/bottom_area"
+      android:dividerHeight="1dp"
+      android:divider="#11000000"
+      android:background="#fae1d7"/>
+     <ListView
+      android:id="@+id/tool_list1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/bottom_area"
+      android:dividerHeight="1dp"
+      android:divider="#11000000"
+      android:background="#fae1d7"/>
+ 
+</RelativeLayout>
+

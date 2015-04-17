@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:focusable="false"
+        android:id="@+id/rl" 
+        android:gravity="center_vertical"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="horizontal" >
+   		<TextView
+   		    android:focusable="false"
+   		    android:paddingLeft="5dp" 
+   		    android:paddingRight="5dp"
+   		    android:gravity="center_vertical"
+        	android:textColor="@color/titleBar"
+        	android:id="@+id/chapter"
+        	android:textSize="20dp"
+        	android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"/>
+   		<!-- <CheckBox
+   		    android:id="@+id/checkbox"
+   		    android:visibility="invisible"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_marginRight="5dp"
+   		    android:layout_width="wrap_content"    
+        	android:layout_height="wrap_content"    
+        	android:focusable="false"    
+        	android:checked="true"        
+        	android:checkMark="?android:attr/listChoiceIndicatorMultiple"/>  -->
+        
+    </RelativeLayout>
+        
+    <TextView
+        android:focusable="false" 
+        android:layout_below="@id/rl"
+        android:paddingLeft="5dp" 
+   		    android:paddingRight="5dp"
+        android:lineSpacingExtra="5dp"
+         android:gravity="center_vertical"
+        android:id="@+id/content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"/>
+       
+    <LinearLayout
+        android:focusable="false"
+        android:background="#CC000000"
+        android:id="@+id/panel"
+         android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+   		android:orientation="horizontal"
+   		android:visibility="invisible"
+            >
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/strengthen"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/strengthen" 
+            android:layout_width="match_parent"
+    		android:layout_height="40dp"
+            />
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/fluent"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/fluent" 
+            android:layout_width="match_parent"
+    		android:layout_height="40dp"
+            />
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/copy"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/selector__copy" 
+            android:layout_width="match_parent"
+    		android:layout_height="40dp"
+            />
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/share"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/selector__share_item" 
+            android:layout_width="match_parent"
+    		android:layout_height="40dp"
+            />
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/delete"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:src="@drawable/selector__delete" 
+            android:layout_width="match_parent"
+    		android:layout_height="40dp"
+    		android:layout_marginRight="10dp"
+            />
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

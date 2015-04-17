@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pic1" >
+
+    <include android:id="@+id/title"    layout="@layout/title_bar_bookmark" />
+
+    <com.orange.view.ElasticScrollView
+       android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pic1"
+            android:paddingBottom="30dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </com.orange.view.ElasticScrollView>
+    
+     <TextView 
+        android:id="@+id/nobookmark_tv"
+        android:visibility="invisible"
+        android:layout_below="@id/titlebar"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="您还没有书签，请在读经结束建立书签！"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

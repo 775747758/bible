@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_gravity="center_vertical"
+    android:id="@+id/FL"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp" >
+    
+    <ImageView
+        android:layout_gravity="center_vertical" 
+        android:scaleType="fitXY"
+        android:id="@+id/imageview"
+        android:layout_width="60dp"
+    	android:layout_height="60dp"/>
+    <ImageView
+       android:layout_gravity="center" 
+       android:id="@+id/imageview2"
+       android:layout_width="30dp"
+       android:layout_height="30dp"/>
+
+</FrameLayout>

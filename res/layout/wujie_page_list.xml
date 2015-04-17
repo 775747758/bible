@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefdc"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+<RelativeLayout 
+    android:id="@+id/top1"
+    android:layout_width="fill_parent"
+    android:layout_height="20dp"
+    android:background="#ffefdc">
+</RelativeLayout>  
+<RelativeLayout 
+    android:id="@+id/top"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#ffefdc"
+    android:layout_below="@id/top1"
+    android:gravity="center">
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textColor="#c55a11"/>
+</RelativeLayout>
+<ImageView 
+    android:id="@+id/search_img"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:background="@drawable/wujie_search1"
+    android:layout_below="@id/top"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"/>
+<Button
+    android:id="@+id/magnify"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_below="@id/top"
+    android:layout_alignTop="@id/search_img"
+    android:layout_alignLeft="@id/search_img"
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="7dp"
+    android:background="@drawable/wujie_magnify"/>
+<Button
+    android:id="@+id/delete"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_below="@id/top"
+    android:onClick="onDelete"
+    android:layout_alignTop="@id/search_img"
+    android:layout_alignRight="@id/search_img"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="7dp"
+    android:background="@drawable/wujie_delete"/>
+<EditText 
+    android:id="@+id/search_text"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:layout_below="@id/top"
+    android:layout_marginTop="10dp"
+    android:singleLine="true"
+    android:textColor="#606060"
+    android:background="#00ffffff"
+    android:layout_marginLeft="65dp"
+    android:gravity="center_vertical"
+    android:layout_marginRight="50dp"
+    />
+
+<ListView 
+    android:id="@+id/note_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+    android:layout_below="@id/search_img"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:dividerHeight="1dp"
+    android:divider="#11c55a11"
+    android:layout_marginBottom="70dp"
+    />
+<Button 
+    android:id="@+id/add"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@drawable/wujie_if_add1"
+    android:onClick="onAddNote"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="25dp"
+    android:layout_centerHorizontal="true"/>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:text="新建笔记"
+    android:textSize="15sp"
+    android:textColor="#c55a11"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="3dp"/>
+</RelativeLayout>
+

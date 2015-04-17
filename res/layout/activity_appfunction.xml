@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_aboutapp" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bitmap_book_read_chapterlist_repeat"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="今日经文："
+                android:textColor="#ff959595"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="   今日经文功能，会在经文背诵页面高亮显示今日经文，并且每天自动更新到下一节经文，您可以在背诵经文页面长按经文选择设置为今日经文。为了使软件更加稳定的运行，请弟兄姊妹不要用360等软件关闭本程序，否则无法每天更新今日经文"
+                android:textColor="#ff959595"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="经文测试："
+                android:textColor="#ff959595"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="   经文背诵页面至少有4节经文才可以考试，您可以在平常读圣经的过程中，当遇到很好的经文，可以点击经文添加到背诵经文。"
+                android:textColor="#ff959595"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

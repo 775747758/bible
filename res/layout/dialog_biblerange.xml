@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/update_pop_rounded_layout"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="选择经文范围"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="55dp"
+        android:background="#FFFFFF" />
+
+    <ScrollView
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="       下面四个范围选项是和背诵模块的四个栏目相对应的，如果您选择全部，将测试您在背诵模块添加的全部经文。如果您还没有在背诵模块添加过任何经文或者在背诵模块相对应的栏目经文少于4节，均不能进入测试。建议您选择推荐经文。"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp" />
+      
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/all_tv"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector__pop_left"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="全部"
+                android:textColor="#939294"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#939294" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/strengthen_tv"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector__pop_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="强化"
+                android:textColor="#939294"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#939294" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fluent_tv"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector__pop_center"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="流利"
+                android:textColor="#939294"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#939294" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/recommend_tv"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/selector__pop_right"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="推荐"
+                android:textColor="#939294"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:textSize="22dp"
+        android:textColor="#5CC3E9" 
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+    android:layout_height="50dp"
+        />
+    <View 
+        android:background="#5CC3E9"
+        android:layout_width="match_parent"
+    android:layout_height="2dp"
+        />
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+    <View 
+        android:background="#DEDEDE"
+        android:layout_width="match_parent"
+    android:layout_height="1dp"
+        />
+    <TextView
+        android:background="@drawable/selector__dialog_button"
+        android:gravity="center"
+        android:clickable="true"
+        android:textSize="22dp"
+        android:textColor="#000000"  
+        android:text="确定"
+        android:id="@+id/certain"
+        android:layout_width="match_parent"
+    android:layout_height="50dp"
+        />
+    
+
+    
+</LinearLayout>

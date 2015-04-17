@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip"
+    android:background="#F7F7F7"
+    android:gravity="center_vertical" >
+   
+
+   <LinearLayout
+       android:onClick="bookmark"
+        android:gravity="center"
+        android:clickable="true"
+         android:layout_width="50dp"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="3.0dip"
+        android:background="@drawable/selector_titlebar_name_read"
+        android:id="@+id/bookmark" 
+        >
+
+    <TextView
+       
+        android:layout_gravity="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/bookmark_read"/>
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+         android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="3.0dip"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/selector_titlebar_name_read"
+            android:id="@+id/title_bar_book"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#383838"
+            android:textSize="22sp" />
+        
+        <TextView
+            android:text="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_titlebar_name_read"
+            android:id="@+id/title_bar_chapter"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#383838"
+            android:textSize="22sp" />
+    </LinearLayout>
+     <LinearLayout
+         android:onClick="search"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        	android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/selector_titlebar_name_read"
+         android:layout_width="30dp"
+         android:layout_height="fill_parent"
+        >
+
+    <TextView
+       
+        android:layout_gravity="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/search_read"/>
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/righr_menu"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/selector_titlebar_name_read"
+         android:layout_width="50dp"
+         android:layout_height="fill_parent"
+        >
+
+    <TextView
+       
+        android:layout_gravity="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/menu_read"/>
+	</LinearLayout>
+	<View 
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#C6C6C6"
+	    />
+</RelativeLayout>

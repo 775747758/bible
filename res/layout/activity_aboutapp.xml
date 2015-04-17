@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <include layout="@layout/title_bar_aboutapp"/>
+    
+    <com.orange.view.ElasticScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+
+        <LinearLayout
+            android:id="@+id/temp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    
+    <ImageView 
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"/>
+    
+    <TextView
+        android:layout_marginTop="30dp"
+         android:layout_gravity="center_horizontal"
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/titleBar"
+        android:textSize="20.0sp" />
+    
+    <TextView
+         android:textSize="14dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8A7065"/>
+    
+   <TextView
+       android:gravity="center"
+       android:onClick="xinlang"
+       android:clickable="true"
+       android:textSize="14dp"
+        android:layout_gravity="center_horizontal"
+        android:text="新浪微博"
+        android:layout_marginTop="15dp"
+        android:id="@+id/xinlang"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="#8A7065"/>
+</LinearLayout>
+</com.orange.view.ElasticScrollView>
+
+</LinearLayout>

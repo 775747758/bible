@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip"
+    android:background="@color/titleBar"
+    android:gravity="center_vertical" >
+
+      <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/selector_titlebar_name"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="back" >
+        
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/home" />
+    </LinearLayout>
+    
+
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/title_bar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="圣经目录"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+    
+    <LinearLayout
+        android:id="@+id/list_ll"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/selector_titlebar_name"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="back" >
+        
+
+        <ImageView
+        android:id="@+id/list_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/list_pressed" />
+    </LinearLayout>
+     
+    
+    <LinearLayout
+        android:layout_toLeftOf="@id/list_ll"
+        android:id="@+id/grid_ll"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/selector_titlebar_name"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="back" >
+        
+
+        <ImageView
+        android:id="@+id/grid_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/gride_default" />
+    </LinearLayout>
+    
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <include layout="@layout/title_bar_brief" />
+     
+     <ScrollView 
+         android:scrollbars="none"
+         android:layout_width="match_parent"
+    android:layout_height="match_parent"
+         >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="15dp"
+               android:lineSpacingExtra="6dp"
+               android:text="    为了方便教会的管理，我们在软件中添加了教会功能。此处的创建教会并非脱离现实，凭空的在网络中建立一个教会，而是将您目前所在的教会复制到软件中，以便于弟兄姊妹之间的交流，已经教会发布事项。"
+               android:textColor="#3F3F3E"
+               android:textSize="16dp"
+               android:typeface="serif" />
+         
+     </ScrollView>
+    
+  
+
+</LinearLayout>

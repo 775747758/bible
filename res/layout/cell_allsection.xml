@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.orange.view.ElasticListView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/defaultlv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:listSelector="@android:color/transparent" >
+    </com.orange.view.ElasticListView>
+    
+     <TextView 
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+        android:id="@+id/noallsection_tv"
+        android:visibility="invisible"
+        android:layout_below="@id/titlebar"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="您还没有添加任何经文到背诵模块，您可以在读圣经的时候，长按经文，添加到背诵模块，如果您想具体了解本模块的功能，可以点击右上角的信息按钮查看！"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
